@@ -22,3 +22,7 @@ Reverse engineering is used only to study behavior and architecture, where lawfu
 
 **D-006 · 2026-10-22 · ACCEPTED · Feature freeze.**
 No Nova features until the owner lifts it. Project infrastructure only.
+
+**D-007 · 2026-10-23 · ACCEPTED · Obsidian is the human knowledge base; the repository is the source of truth.**
+Knowledge (decisions, architecture, bugs with root cause, research, lessons) goes to the owner's vault via `/obsidian-sync`; never transcripts or bulk code.
+On conflict, implementation + tests win and the note is corrected. Agents never create a vault, guess its path, or delete owner content.

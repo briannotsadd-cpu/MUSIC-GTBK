@@ -32,9 +32,11 @@ Working: none. Partial: none. Known broken: none (nothing exists yet).
 - Realtime, plugin-isolation, render and DSP rules: `CLAUDE.md` § Non-negotiable constraints.
 
 ## Blockers
+- The Obsidian vault location is unknown (not reachable from the cloud session).
 - The owner must decide P0 (stack and platforms). Agents must not choose it unilaterally.
 
 ## Recent major changes
+- 2026-10-23: added `/obsidian-sync` + D-007 (Obsidian knowledge base). Vault NOT located; no notes written. IMPLEMENTED — NOT VERIFIED against a real vault.
 - 2026-10-22: added the Claude Code project-intelligence system (CLAUDE.md, rules, skills, agents, hooks, verify script).
 
 ## Last verification

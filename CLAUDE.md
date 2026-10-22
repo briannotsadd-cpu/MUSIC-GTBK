@@ -21,6 +21,8 @@ Allowed work: project infrastructure, decisions, docs, tooling.
 | Subsystem rules (load automatically by path) | `.claude/rules/*.md` |
 | Verification commands | `scripts/verify.sh` |
 
+| Human knowledge base (why, lessons, research, history) | Owner's Obsidian vault (`$NOVA_VAULT_PATH`), via `/obsidian-sync`. Never overrides code or tests |
+
 Create `KNOWN_ISSUES.md` and `TECH_DEBT.md` when their first real entry exists. Do not create empty trackers.
 Facts live in one file only; elsewhere, link to them.
 
@@ -49,6 +51,11 @@ A task is done only with evidence: test output, a runtime check, a benchmark or 
 - `fast` passed → `VERIFIED (fast)`. Never claim "production ready" from `fast` alone.
 - Major feature → `full` passed, plus an independent review (`/code-review`) and `/failure-test` where it applies.
 Afterwards, update `PROJECT_STATE.md` (`/handoff`).
+
+## Obsidian (second brain, not a chat archive)
+After major work, a bug fix with root cause, a decision, finished research, or at session end, run `/obsidian-sync`.
+The vault path comes from `NOVA_VAULT_PATH`; if it is unset or invalid, ask. Never guess a path or create a vault.
+Never delete the owner's notes. Never paste transcripts or long code. If a note contradicts the code, the code wins; fix the note.
 
 ## Research before guessing
 Unsure about VST3, CLAP, AU, JUCE, C++, OS audio APIs, threading or dependency versions? Read the docs or the source first

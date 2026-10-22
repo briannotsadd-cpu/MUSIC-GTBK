@@ -17,3 +17,6 @@ compile_commands.json
 
 # Python bytecode from hook scripts
 __pycache__/
+
+# Obsidian notes drafted while the vault was unreachable
+/OBSIDIAN_PENDING.md
