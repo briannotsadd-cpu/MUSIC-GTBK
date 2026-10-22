@@ -1,0 +1,16 @@
+# Build outputs (scripts/verify.sh uses build/fast, build/asan, build/tsan)
+/build/
+/cmake-build-*/
+compile_commands.json
+
+# Claude Code: per-machine settings and hook state
+.claude/settings.local.json
+.claude/state/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.p12
+
+.DS_Store
